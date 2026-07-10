@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Abana Cars Ltd — Premium Automobiles in Abuja" },
       {
         property: "og:description",
-        content: "Curated luxury and pre-owned vehicles in the heart of Wuse 2, Abuja.",
+        content: "Abuja's trusted dealership for premium and pre-owned vehicles. Visit the Abana Cars showroom in Wuse 2 — open 24 hours, 4.6★ on Google.",
       },
     ],
   }),
