@@ -17,9 +17,9 @@ import {
 } from "lucide-react";
 
 import heroShowroom from "@/assets/abana-showroom-hero.jpg.asset.json";
-import car1 from "@/assets/car-1.jpg";
 import car2 from "@/assets/car-2.jpg";
-import car3 from "@/assets/car-3.jpg";
+import rangeRoverAsset from "@/assets/range-rover-sport.jpg.asset.json";
+import gWagonAsset from "@/assets/g-wagon.jpg.asset.json";
 import showroom from "@/assets/showroom.jpg";
 
 export const Route = createFileRoute("/")({
@@ -295,11 +295,11 @@ function Stats() {
 
 const CARS = [
   {
-    img: car1,
+    img: rangeRoverAsset.url,
     tag: "SUV",
-    name: "Mercedes-Benz GLE 450",
-    year: "2023",
-    mileage: "18,400 km",
+    name: "Range Rover Sport",
+    year: "2022",
+    mileage: "14,200 km",
   },
   {
     img: car2,
@@ -309,11 +309,11 @@ const CARS = [
     mileage: "9,120 km",
   },
   {
-    img: car3,
+    img: gWagonAsset.url,
     tag: "SUV",
-    name: "Mercedes-Benz G 550",
+    name: "Mercedes-AMG G 63",
     year: "2024",
-    mileage: "3,050 km",
+    mileage: "2,800 km",
   },
 ];
 
