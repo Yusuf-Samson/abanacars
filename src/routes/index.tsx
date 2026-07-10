@@ -16,7 +16,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-import heroCar from "@/assets/hero-car.jpg";
+import heroShowroom from "@/assets/abana-showroom-hero.jpg.asset.json";
 import car1 from "@/assets/car-1.jpg";
 import car2 from "@/assets/car-2.jpg";
 import car3 from "@/assets/car-3.jpg";
@@ -199,8 +199,8 @@ function Hero() {
               <div className="absolute -inset-8 -z-10 rounded-[40px] bg-gradient-to-b from-gold-soft/50 to-transparent blur-2xl" />
               <div className="overflow-hidden rounded-[28px] bg-surface hairline shadow-[0_40px_80px_-30px_rgba(0,0,0,0.35)]">
                 <img
-                  src={heroCar}
-                  alt="Featured luxury sedan at Abana Cars showroom"
+                  src={heroShowroom.url}
+                  alt="The Abana Cars showroom in Wuse 2, Abuja"
                   width={1600}
                   height={1104}
                   className="h-[420px] w-full object-cover sm:h-[520px]"
