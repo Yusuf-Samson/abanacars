@@ -16,11 +16,11 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-import heroShowroom from "@/assets/abana-showroom-hero.jpg.asset.json";
-import car2 from "@/assets/car-2.jpg";
-import rangeRoverAsset from "@/assets/range-rover-sport.jpg.asset.json";
-import gWagonAsset from "@/assets/g-wagon.jpg.asset.json";
-import showroom from "@/assets/showroom.jpg";
+const heroShowroom = "/images/hero-car.jpeg";
+const car2 = "/images/car-2.jpg";
+const rangeRoverAsset = "/images/car-1.jpeg";
+const gWagonAsset = "/images/car-3.jpeg";
+const showroom = "/images/showroom.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -114,12 +114,13 @@ function Nav() {
 
 function Logo() {
   return (
-    <div className="grid h-8 w-8 place-items-center rounded-lg bg-ink text-primary-foreground">
-      <span className="text-[13px] font-bold tracking-tighter">A</span>
-    </div>
-  );
+      <img
+        src="/images/abana-logo.png"
+        alt="Abana Cars"
+        className="h-10 w-auto object-contain"
+      />
+    );
 }
-
 /* ---------------- Hero ---------------- */
 
 function Hero() {
@@ -199,7 +200,7 @@ function Hero() {
               <div className="absolute -inset-8 -z-10 rounded-[40px] bg-gradient-to-b from-gold-soft/50 to-transparent blur-2xl" />
               <div className="overflow-hidden rounded-[28px] bg-surface hairline shadow-[0_40px_80px_-30px_rgba(0,0,0,0.35)]">
                 <img
-                  src={heroShowroom.url}
+                  src={heroShowroom}
                   alt="The Abana Cars showroom in Wuse 2, Abuja"
                   width={1600}
                   height={1104}
@@ -295,7 +296,7 @@ function Stats() {
 
 const CARS = [
   {
-    img: rangeRoverAsset.url,
+    img: rangeRoverAsset,
     tag: "SUV",
     name: "Range Rover Sport",
     year: "2022",
@@ -309,7 +310,7 @@ const CARS = [
     mileage: "9,120 km",
   },
   {
-    img: gWagonAsset.url,
+    img: gWagonAsset,
     tag: "SUV",
     name: "Mercedes-AMG G 63",
     year: "2024",
